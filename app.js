@@ -145,10 +145,10 @@ const fizz= []; buzz = []; fizzbuzz = [];
 nums.forEach(function (num){
 if (num % 3)fizz.push(num);
 if (num % 5)buzz.push(num);
-if (num % 15)fizzbuzz.push(num);
+if (num % 3 && num % 5)fizzbuzz.push(num)
 })
 
-
+//3 ifs allows the function to check to ensure that the number is divisible by each number rather than else which will ignore the rest of the function 
 
 console.log('Exercise 12 Results:');
 console.log('  fizz:', fizz);
